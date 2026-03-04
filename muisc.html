@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music | Italia</title>
+
+<style>
+body{
+  margin:0;
+  font-family: system-ui, sans-serif;
+  background:url("background.jpg") center/cover no-repeat fixed;
+}
+
+/* Remove default element margins */
+h1, p{ margin:0; }
+
+/* TOP NAVi BAR uwu */
+.topbar{
+  background:#f7f1ba;
+  padding:30px 0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.nav-item{
+  width:180px;
+  text-align:center;
+}
+
+.nav-item img{
+  width:100%;
+  height:auto;
+  cursor:pointer;
+  transition: transform .2s ease;
+  display:block;
+}
+
+.nav-item img:hover{
+  transform:scale(1.05);
+}
+
+/* MAIN MUSIC SECTION */
+.music-section{
+  background:rgba(247,173,203,0.9);
+  padding:40px 20px;
+  text-align:center;
+}
+
+.music-section h1{
+  margin:0 0 20px;
+  font-size:40px;
+}
+
+/* Big album */
+.main-album img{
+  width:400px;
+  max-width:90%;
+  transition: transform .3s ease;
+  display:block;
+  margin:0 auto;
+}
+
+.main-album img:hover{
+  transform:scale(1.05);
+}
+
+/* Platform section */
+.platforms{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:80px;
+  flex-wrap:wrap;
+}
+
+.platform{
+  text-align:center;
+}
+
+/* card ..is to make clickabel */
+.platform a{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+  transition: transform .25s ease;
+}
+
+.platform a:hover{
+  transform:translateY(-4px);
+}
+
+/* Platform image */
+.platform img{
+  width:120px;
+  cursor:pointer;
+  display:block;
+  margin:0 auto;
+}
+
+/* Platform text */
+.platform p{
+  font-weight:900;
+  font-size:24px;
+  margin-top:12px;
+  text-decoration:underline;
+}
+
+/* FOOTER */
+.site-footer{
+  width:100%;
+  text-align:center;
+  padding:18px 0;
+  background:#f7f1ba;
+  font-weight:700;
+  letter-spacing:.08em;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media (max-width: 600px){
+
+  .topbar{ padding:18px 0; }
+  .nav-item{ width:90px; }
+
+  .music-section{ padding:30px 16px; }
+  .music-section h1{ font-size:28px; }
+
+  .platforms{ gap:40px; margin-top:30px; }
+  .platform img{ width:95px; }
+  .platform p{ font-size:18px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP NAV -->
+<div class="topbar">
+  <div class="nav-item"><a href="index.html"><img src="home.png" alt="Home"></a></div>
+  <div class="nav-item"><a href="music.html"><img src="music.png" alt="Music"></a></div>
+  <div class="nav-item"><a href="schedule.html"><img src="schedule.png" alt="Schedule"></a></div>
+  <div class="nav-item">
+    <a href="https://italiaiskawaii.bigcartel.com/" target="_blank" rel="noopener">
+      <img src="merch.png" alt="Merch">
+    </a>
+  </div>
+</div>
+
+<!-- MUSIC CONTENT -->
+<div class="music-section">
+
+  <h1>My new album "Superstar Idol" out now!</h1>
+
+  <div class="main-album">
+    <a href="https://open.spotify.com/album/2HmP595srK5usenK5j8C62?si=Bn1h2gycRYuIXX9VkP5-dg" target="_blank" rel="noopener">
+      <img src="albumcover.png" alt="Superstar Idol Album">
+    </a>
+  </div>
+
+  <div class="platforms">
+
+    <div class="platform">
+      <a href="https://music.apple.com/us/artist/italia-is-kawaii/1747134350" target="_blank" rel="noopener">
+        <img src="chiikawa1.gif" alt="Apple Music">
+        <p>Apple Music</p>
+      </a>
+    </div>
+
+    <div class="platform">
+      <a href="https://www.youtube.com/@Italiaiskawaii" target="_blank" rel="noopener">
+        <img src="chiikawa2.gif" alt="YouTube">
+        <p>YouTube</p>
+      </a>
+    </div>
+
+    <div class="platform">
+      <a href="https://music.youtube.com/channel/UCnNgISBFGpHnkLpOPLuzp5Q?si=wVCnODDxpQlyPOMs" target="_blank" rel="noopener">
+        <img src="chiikawa3.gif" alt="YouTube Music">
+        <p>YouTube Music</p>
+      </a>
+    </div>
+
+    <div class="platform">
+      <a href="https://open.spotify.com/artist/1m6QZHtTLfcql8bs6fWiiS?si=Kd1p72FPTwaNg7jaU5PDlg" target="_blank" rel="noopener">
+        <img src="chiikawa4.gif" alt="Spotify">
+        <p>Spotify</p>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  ♡ Italia is Kawaii 2026 ♡
+</footer>
+
+</body>
+</html>
