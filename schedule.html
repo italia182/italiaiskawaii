@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule | Italia</title>
+
+<style>
+body{
+  margin:0;
+  font-family: system-ui, sans-serif;
+}
+
+/* Remove default element? */
+h1, p{ margin:0; }
+
+/* TOP NAV BAR */
+.topbar{
+  background:#f7f1ba;
+  padding:30px 0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.nav-item{
+  width:180px;
+  text-align:center;
+}
+
+.nav-item img{
+  width:100%;
+  height:auto;
+  cursor:pointer;
+  transition: transform .2s ease;
+  display:block;
+}
+
+.nav-item img:hover{
+  transform:scale(1.05);
+}
+
+/* PINK SCHEDULE SECTION */
+.schedule-section{
+  background:#f7adcb;
+  text-align:center;
+  padding:50px 20px 40px; /* slightly tighter */
+}
+
+/* Schedule Content */
+.schedule-content{
+  color:black;
+  letter-spacing:.05em;
+}
+
+/* Title */
+.schedule-content h1{
+  font-size:48px;
+  margin:0 0 18px;   /* controlled spacing */
+  font-weight:900;
+}
+
+/* Events */
+.schedule-content p{
+  font-size:32px;
+  margin:12px 0;     /* controlled spacing */
+  font-weight:500;
+  transition: all .3s ease;
+}
+
+/* Past Events */
+.past{
+  text-decoration:line-through;
+  opacity:0.6;
+}
+
+/* glow */
+.upcoming{
+  font-weight:700;
+  color:#fff;
+  text-shadow:
+    0 0 5px #ff69b4,
+    0 0 10px #ff69b4,
+    0 0 20px #ff1493;
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse{
+  from{
+    text-shadow:
+      0 0 5px #ff69b4,
+      0 0 10px #ff69b4;
+  }
+  to{
+    text-shadow:
+      0 0 10px #ff69b4,
+      0 0 20px #ff1493,
+      0 0 30px #ff1493;
+  }
+}
+
+/* Flyer image */
+.flyer{
+  width:min(520px, 90vw);
+  height:auto;
+  display:block;
+  margin:26px auto 0;
+}
+
+/* FOOTER */
+.site-footer{
+  width:100%;
+  text-align:center;
+  padding:18px 0;
+  background:#f7f1ba;
+  font-weight:700;
+  letter-spacing:.08em;
+  font-size:14px;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px){
+
+  /* Smaller hearts + tighter nav */
+  .topbar{
+    padding:18px 0;
+  }
+
+  .nav-item{
+    width:90px;
+  }
+
+  .schedule-section{
+    padding:36px 16px 28px;
+  }
+
+  .schedule-content h1{
+    font-size:34px;
+  }
+
+  .schedule-content p{
+    font-size:18px;
+    white-space: nowrap;
+  }
+
+  .flyer{
+    width:min(420px, 92vw);
+    margin-top:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP NAVi -->
+<div class="topbar">
+
+  <div class="nav-item">
+    <a href="index.html">
+      <img src="home.png" alt="Home">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="music.html">
+      <img src="music.png" alt="Music">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="schedule.html">
+      <img src="schedule.png" alt="Schedule">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="https://italiaiskawaii.bigcartel.com/" target="_blank" rel="noopener">
+      <img src="merch.png" alt="Merch">
+    </a>
+  </div>
+
+</div>
+
+<!-- SCHEDULE SECTION -_- -->
+<div class="schedule-section">
+  <div class="schedule-content">
+    <h1>SCHEDULE</h1>
+
+    <p class="past">FEBRUARY 13 - Ur Realiti Release</p>
+    <p class="past">FEBRUARY 28 - Sin Fronteras Festival</p>
+
+    <p class="upcoming">MARCH 28 - Idol Comeback</p>
+
+    <p>APRIL 17 - Superstar Idol CD Release</p>
+    <p>JUNE 13 - Birthday Live x Debut Popup</p>
+    <p>AUGUST 22 - 9 Years Anniversary Live</p>
+
+    <img class="flyer" src="flyer.png" alt="Event flyer">
+  </div>
+</div>
+
+<footer class="site-footer">
+  ♡ Italia is Kawaii 2026 ♡
+</footer>
+
+</body>
+</html>
