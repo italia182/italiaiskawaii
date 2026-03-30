@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kawaii Life Cafe | Italia</title>
+
+<link rel="icon" type="image/png" href="penlight.png">
+
+<style>
+body{
+  margin:0;
+  font-family: system-ui, sans-serif;
+}
+
+h1, p{
+  margin:0;
+}
+
+/* TOP NAV BAR */
+.topbar{
+  background:#f7f1ba;
+  padding:30px 0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.nav-item{
+  width:180px;
+  text-align:center;
+}
+
+.nav-item img{
+  width:100%;
+  height:auto;
+  cursor:pointer;
+  transition:transform .2s ease;
+  display:block;
+}
+
+.nav-item img:hover{
+  transform:scale(1.05);
+}
+
+/* MAIN SECTION */
+.cafe-section{
+  background:#f7adcb;
+  text-align:center;
+  padding:50px 20px 40px;
+}
+
+.cafe-content{
+  color:black;
+  letter-spacing:.02em;
+  max-width:900px;
+  margin:0 auto;
+}
+
+.cafe-content h1{
+  font-size:72px;
+  margin:0 0 22px;
+  font-weight:900;
+  text-align:center;
+  line-height:1.05;
+}
+
+.cafe-content p{
+  font-size:32px;
+  margin:16px 0;
+  font-weight:500;
+}
+
+.cafe-link-wrap{
+  margin:18px 0 28px;
+}
+
+.cafe-link{
+  color:#5a2ca0;
+  text-decoration:underline;
+  font-size:32px;
+  font-weight:500;
+  display:inline-block;
+}
+
+.cafe-link:hover{
+  opacity:0.85;
+}
+
+/* Flyer image */
+.cafe-image{
+  width:min(750px, 90vw);
+  height:auto;
+  display:block;
+  margin:24px auto 0;
+}
+
+/* Button image */
+.cafe-button-img{
+  width:min(260px, 55vw);
+  display:block;
+  margin:40px auto 0;
+  cursor:pointer;
+  transition:transform .2s ease;
+}
+
+.cafe-button-img:hover{
+  transform:scale(1.05);
+}
+
+.cafe-button-img:active{
+  transform:scale(0.97);
+}
+
+/* FOOTER */
+.site-footer{
+  width:100%;
+  text-align:center;
+  padding:18px 0;
+  background:#f7f1ba;
+  font-weight:700;
+  letter-spacing:.08em;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media (max-width: 600px){
+  .topbar{
+    padding:18px 0;
+  }
+
+  .nav-item{
+    width:90px;
+  }
+
+  .cafe-section{
+    padding:34px 14px 28px;
+  }
+
+  .cafe-content h1{
+    font-size:34px;
+    line-height:1.12;
+    text-align:center;
+  }
+
+  .cafe-content p{
+    font-size:18px;
+    margin:10px 0;
+  }
+
+  .cafe-link-wrap{
+    margin:14px 0 20px;
+  }
+
+  .cafe-link{
+    font-size:18px;
+  }
+
+  .cafe-image{
+    width:min(420px, 94vw);
+    margin-top:18px;
+  }
+
+  .cafe-button-img{
+    width:min(180px, 52vw);
+    margin-top:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP NAV -->
+<div class="topbar">
+
+  <div class="nav-item">
+    <a href="index.html">
+      <img src="home.png" alt="Home">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="music.html">
+      <img src="music.png" alt="Music">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="schedule.html">
+      <img src="schedule.png" alt="Schedule">
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="https://italiaiskawaii.bigcartel.com/" target="_blank" rel="noopener">
+      <img src="merch.png" alt="Merch">
+    </a>
+  </div>
+
+</div>
+
+<!-- CAFE SECTION -->
+<div class="cafe-section">
+  <div class="cafe-content">
+
+    <h1>KAWAII LIFE CAFE SPECIAL POPUP</h1>
+
+    <p>JUNE 13 | Brownsville, TX</p>
+    <p>Birthday Live x Kawaii Life Cafe Popup</p>
+
+    <div class="cafe-link-wrap">
+      <a class="cafe-link" href="https://italiaiskawaii.bigcartel.com/" target="_blank" rel="noopener">
+        Reserve your spot ♡
+      </a>
+    </div>
+
+    <img class="cafe-image" src="kawaii life cafe poster.png" alt="Kawaii Life Cafe flyer">
+
+    <a href="https://italiaiskawaii.bigcartel.com/" target="_blank" rel="noopener">
+      <img class="cafe-button-img" src="HeartButton.png" alt="Purchase tickets">
+    </a>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  ♡ Italia is Kawaii 2026 ♡
+</footer>
+
+</body>
+</html>
